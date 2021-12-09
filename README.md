@@ -17,7 +17,7 @@ $ git add .; git commit -m "UP2DATE"; git push
 ```
 - release
 ```
-$ tag=`date --iso-8601=minutes`
+$ tag=`date +%Y%m%d-%H%M%S`
 $ git flow release start $tag
 $ git log --oneline --decorate=short > CHANGELOG.md
 $ git add .; git commit -m "UP2DATE"
