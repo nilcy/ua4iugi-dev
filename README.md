@@ -7,7 +7,7 @@ dev
 $ git clone https://github.com/nilcy/ua4iugi-dev.git
 $ cd ua4iugi-dev
 $ git flow init -d
-$ git add .; git commit -m "UP2DATE"; git push
+$ git add .; git commit -m "UP2DATE"; git push origin --all
 ```
 - develop
 ```
@@ -22,5 +22,4 @@ $ git flow release start $tag
 $ git log --oneline --decorate=short > CHANGELOG.md
 $ git add .; git commit -m "UP2DATE"; git push
 $ git flow release finish $tag
-$ git push origin --all
 ```
