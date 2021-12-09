@@ -20,7 +20,7 @@ $ git add .; git commit -m "UP2DATE"; git push
 $ tag=`date +%Y%m%d-%H%M%S`
 $ git flow release start $tag
 $ git log --oneline --decorate=short > CHANGELOG.md
-$ git add .; git commit -m "UP2DATE"
+$ git add .; git commit -m "UP2DATE"; git push
 $ git flow release finish $tag
 $ git push origin --all
 ```
